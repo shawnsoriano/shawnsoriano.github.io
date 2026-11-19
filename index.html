@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shawn Soriano – Portfolio</title>
+<meta name="description" content="Portfolio of Shawn Cleverson R. Soriano, IT student in the Philippines.">
+<style>
+:root{--bg:#f4f6fa;--ink:#14213d;--muted:#55627a;--line:#d5dbe6;--accent:#1f6feb;--soft:#e6ecf7;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--ink:#e8edf7;--muted:#9aa8c2;--line:#27324a;--accent:#6ea8ff;--soft:#18233a;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:22px;padding:22px 0;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+header.hero{padding:64px 0 56px}
+h1{font-size:clamp(2.8rem,10vw,5.6rem);line-height:.95;letter-spacing:-.035em;margin:0 0 24px;font-weight:800}
+.lead{font-size:1.25rem;max-width:34em;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:1.6rem;letter-spacing:-.02em;margin:0 0 20px}
+p{margin:0 0 14px;max-width:38em}
+.proj{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.proj:last-child{border-bottom:0}
+.proj h3{margin:0;font-size:1.1rem}
+.proj p{grid-column:1;margin:0;color:var(--muted);font-size:.97rem}
+.proj .tag{grid-row:1;grid-column:2;color:var(--muted);font-size:.85rem;align-self:center}
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{background:var(--soft);padding:6px 14px;border-radius:8px;font-size:.95rem}
+footer{padding:36px 0 56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:520px){.proj{grid-template-columns:1fr}.proj .tag{grid-row:auto;grid-column:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Shawn Soriano</h1>
+    <p class="lead">I'm an IT student in the Philippines who likes turning class projects into things people can actually use and read.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="https://github.com/shawnsoriano">GitHub profile</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm Shawn Cleverson R. Soriano, a student taking ITE104. I work on presentations, research, writing and video projects, and I'm building my skills in Microsoft 365 and web development.</p>
+    <p>This page is my portfolio on GitHub. I add new work here as I finish it.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proj">
+      <h3><a href="#">MS 365 Event and Seminar Project</a></h3>
+      <span class="tag">Group project</span>
+      <p>A five-member PowerPoint presentation planning an event and seminar. I was the researcher and analyst.</p>
+    </div>
+    <div class="proj">
+      <h3><a href="#">1899 Malolos Constitution Presentation</a></h3>
+      <span class="tag">Class presentation</span>
+      <p>Group slides on the Philippine constitutions, covering the 1899 Malolos Constitution.</p>
+    </div>
+    <div class="proj">
+      <h3><a href="#">Self-Introduction Video</a></h3>
+      <span class="tag">UTS final requirement</span>
+      <p>A 3 to 5 minute video for Understanding the Self, written and recorded by me.</p>
+    </div>
+    <div class="proj">
+      <h3><a href="#">Persuasive Speech: Use Social Media Less</a></h3>
+      <span class="tag">Speech</span>
+      <p>A persuasive speech arguing for healthier social media habits.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>PowerPoint</li><li>Word</li><li>Excel</li><li>Research</li><li>Public speaking</li><li>Video scripting</li><li>HTML &amp; CSS</li><li>Git &amp; GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>The best way to reach me is through GitHub or email.</p>
+    <p><a href="https://github.com/shawnsoriano">github.com/shawnsoriano</a><br><a href="mailto:you@example.com">you@example.com</a></p>
+  </section>
+
+  <footer>&copy; 2026 Shawn Soriano</footer>
+</div>
+</body>
+</html>
